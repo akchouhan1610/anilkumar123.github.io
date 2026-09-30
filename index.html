@@ -1,1 +1,142 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anil Kumar | Web Developer</title>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+    }
+    body {
+        background: #0f172a;
+        color: white;
+        line-height: 1.6;
+    }
+    nav {
+        background: #020617;
+        padding: 15px;
+        text-align: center;
+        position: sticky;
+        top: 0;
+    }
+    nav a {
+        color: white;
+        text-decoration: none;
+        margin: 0 12px;
+    }
+    nav a:hover {
+        color: #38bdf8;
+    }
+    section {
+        padding: 70px 20px;
+        max-width: 900px;
+        margin: auto;
+    }
+    #home {
+        text-align: center;
+        min-height: 90vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #home h1 {
+        font-size: 45px;
+        margin-bottom: 15px;
+    }
+    #home p {
+        font-size: 20px;
+        color: #94a3b8;
+    }
+    h2 {
+        color: #38bdf8;
+        margin-bottom: 20px;
+    }
+    .skills {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+    .skill {
+        background: #1e293b;
+        padding: 10px 18px;
+        border-radius: 8px;
+    }
+    .project {
+        background: #1e293b;
+        padding: 20px;
+        margin-bottom: 20px;
+        border-radius: 10px;
+    }
+    footer {
+        text-align: center;
+        padding: 25px;
+        background: #020617;
+        color: #94a3b8;
+    }
+    @media (max-width: 600px) {
+        #home h1 {
+            font-size: 35px;
+        }
+    }
+</style>
+</head>
+<body>
+<nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+</nav>
+<section id="home">
+    <h1>Hi, I'm Anil Kumar</h1>
+    <p>Web Developer | BCA Student | Future Full Stack Developer</p>
+</section>
+<section id="about">
+    <h2>About Me</h2>
+    <p>
+        I am a BCA student interested in web development.
+        I am learning HTML, CSS, JavaScript and modern web technologies.
+    </p>
+</section>
+<section id="skills">
+    <h2>Skills</h2>
+    <div class="skills">
+        <div class="skill">HTML</div>
+        <div class="skill">CSS</div>
+        <div class="skill">JavaScript</div>
+        <div class="skill">Git & GitHub</div>
+        <div class="skill">Responsive Design</div>
+    </div>
+</section>
+<section id="projects">
+    <h2>Projects</h2>
+    <div class="project">
+        <h3>Portfolio Website</h3>
+        <p>My personal portfolio website created using HTML and CSS.</p>
+    </div>
+    <div class="project">
+        <h3>Future Projects</h3>
+        <p>More web development projects will be added here.</p>
+    </div>
+</section>
+<section id="contact">
+    <h2>Contact</h2>
+    <p>Email: your-email@example.com</p>
+    <p>
+        GitHub:
+        <a href="https://github.com/Akchouhan1610" target="_blank">
+            github.com/Akchouhan1610
+        </a>
+    </p>
+</section>
+<footer>
+    © 2026 Anil Kumar. All Rights Reserved.
+</footer>
+</body>
+</html>
