@@ -11,6 +11,9 @@
         box-sizing: border-box;
         font-family: Arial, sans-serif;
     }
+    html {
+        scroll-behavior: smooth;
+    }
     body {
         background: #0f172a;
         color: white;
@@ -22,11 +25,13 @@
         text-align: center;
         position: sticky;
         top: 0;
+        z-index: 1000;
     }
     nav a {
         color: white;
         text-decoration: none;
-        margin: 0 12px;
+        margin: 0 10px;
+        font-weight: bold;
     }
     nav a:hover {
         color: #38bdf8;
@@ -63,14 +68,44 @@
     }
     .skill {
         background: #1e293b;
-        padding: 10px 18px;
+        padding: 12px 18px;
         border-radius: 8px;
+        color: white;
+        text-decoration: none;
+        display: inline-block;
+        transition: 0.3s;
+    }
+    .skill:hover {
+        background: #38bdf8;
+        color: #020617;
+        transform: translateY(-3px);
     }
     .project {
         background: #1e293b;
         padding: 20px;
         margin-bottom: 20px;
         border-radius: 10px;
+    }
+    .project h3 {
+        color: #38bdf8;
+        margin-bottom: 8px;
+    }
+    .project a {
+        display: inline-block;
+        margin-top: 10px;
+        color: #38bdf8;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    .project a:hover {
+        text-decoration: underline;
+    }
+    .contact-link {
+        color: #38bdf8;
+        text-decoration: none;
+    }
+    .contact-link:hover {
+        text-decoration: underline;
     }
     footer {
         text-align: center;
@@ -79,8 +114,15 @@
         color: #94a3b8;
     }
     @media (max-width: 600px) {
+        nav a {
+            margin: 0 5px;
+            font-size: 14px;
+        }
         #home h1 {
             font-size: 35px;
+        }
+        #home p {
+            font-size: 17px;
         }
     }
 </style>
@@ -105,33 +147,83 @@
     </p>
 </section>
 <section id="skills">
-    <h2>Skills</h2>
+    <h2>My Skills</h2>
     <div class="skills">
-        <div class="skill">HTML</div>
-        <div class="skill">CSS</div>
-        <div class="skill">JavaScript</div>
-        <div class="skill">Git & GitHub</div>
-        <div class="skill">Responsive Design</div>
+        <a class="skill" href="#html">HTML</a>
+        <a class="skill" href="#css">CSS</a>
+        <a class="skill" href="#javascript">JavaScript</a>
+        <a class="skill" href="#github">Git & GitHub</a>
+        <a class="skill" href="#responsive">Responsive Design</a>
     </div>
+</section>
+<section id="html">
+    <h2>HTML</h2>
+    <p>
+        HTML is used to create the structure of web pages.
+        I use HTML to build headings, paragraphs, sections,
+        links, images and other website elements.
+    </p>
+</section>
+<section id="css">
+    <h2>CSS</h2>
+    <p>
+        CSS is used to design and style websites.
+        I use CSS for colors, layouts, spacing, animations
+        and responsive designs.
+    </p>
+</section>
+<section id="javascript">
+    <h2>JavaScript</h2>
+    <p>
+        JavaScript makes websites interactive.
+        I am learning JavaScript to create dynamic and
+        interactive web applications.
+    </p>
+</section>
+<section id="github">
+    <h2>Git & GitHub</h2>
+    <p>
+        I use Git and GitHub to manage, store and publish
+        my web development projects.
+    </p>
+</section>
+<section id="responsive">
+    <h2>Responsive Design</h2>
+    <p>
+        Responsive design makes websites work properly
+        on mobile phones, tablets and computers.
+    </p>
 </section>
 <section id="projects">
     <h2>Projects</h2>
     <div class="project">
         <h3>Portfolio Website</h3>
-        <p>My personal portfolio website created using HTML and CSS.</p>
+        <p>
+            My personal portfolio website created using
+            HTML and CSS.
+        </p>
+        <a href="#home">View Project ↑</a>
     </div>
     <div class="project">
         <h3>Future Projects</h3>
-        <p>More web development projects will be added here.</p>
+        <p>
+            More web development projects will be added here
+            as I continue learning.
+        </p>
     </div>
 </section>
 <section id="contact">
     <h2>Contact</h2>
-    <p>Email: your-email@example.com</p>
+    <p>
+        Email:
+        <span>your-email@example.com</span>
+    </p>
     <p>
         GitHub:
-        <a href="https://github.com/Akchouhan1610" target="_blank">
-            github.com/Akchouhan1610
+        <a class="contact-link"
+           href="https://github.com/Akchouhan1610"
+           target="_blank">
+           github.com/Akchouhan1610
         </a>
     </p>
 </section>
